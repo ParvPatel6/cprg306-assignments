@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <main>
       
-      <h1>Shopping List</h1>
+      <h1 className="text-white">StudentInfo</h1>
       <StudentInfo />
     </main>
   );
