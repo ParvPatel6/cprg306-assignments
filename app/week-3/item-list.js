@@ -143,11 +143,5 @@ export default function ItemList(){
         </main>
       );
 
-
-
 }
 
- 
-
-
- 
