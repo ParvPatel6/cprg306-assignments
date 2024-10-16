@@ -12,6 +12,9 @@ export default function Page() {
       <li className="text-white">
         <Link href ="/week-4">Week 4</Link>
       </li>
+      <li className="text-white">
+        <Link href ="/week-5">Week 5</Link>
+      </li>
     </div>
   );
 }
