@@ -45,10 +45,10 @@ export default function NewItem() {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-black">
+    <div className="min-h-screen flex items-center justify-center bg-blue-slate-900">
       <form
         onSubmit={handleSubmit}
-        className="bg-blue-950 rounded-lg p-6 shadow-md space-y-4 w-[300px]"
+        className="bg-blue-900 rounded-xl p-6 space-y-4 w-[300px]"
       >
         {/* Name Field */}
         <div>
@@ -58,7 +58,7 @@ export default function NewItem() {
             value={name}
             onChange={(e) => setName(e.target.value)}
             required
-            className="border border-gray-300 rounded-lg px-4 py-2 w-full bg-gray-100 text-gray-900"
+            className="border border-gray-900 rounded-xl px-4 py-2 w-full bg-white"
           />
         </div>
 
@@ -71,7 +71,7 @@ export default function NewItem() {
             className={`px-4 py-2 rounded-full ${
               quantity === 1
                 ? "bg-gray-500 cursor-not-allowed"
-                : "bg-gray-300 text-gray-900"
+                : "bg-blue-500 text-white"
             }`}
           >
             −
@@ -96,7 +96,7 @@ export default function NewItem() {
           <select
             value={category}
             onChange={(e) => setCategory(e.target.value)}
-            className="border border-gray-300 rounded-lg px-4 py-2 w-full bg-gray-100 text-gray-900"
+            className="border border-gray-300 rounded-xl px-4 py-2 w-full bg-gray-100 text-gray-900"
           >
             <option value="produce">Produce</option>
             <option value="dairy">Dairy</option>
@@ -115,7 +115,7 @@ export default function NewItem() {
         {/* Submit Button */}
         <button
           type="submit"
-          className="w-full py-2 bg-blue-500 text-white rounded-lg"
+          className="w-full py-2 bg-blue-500 text-white rounded-xl"
         >
           Add Item
         </button>
